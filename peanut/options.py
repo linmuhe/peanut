@@ -85,7 +85,7 @@ configs = Option({
         'name': 'Your Name',
         'url': '/posts/about.html',
         'bio': None,
-        'location': 'Beijing, China',
+        'location': 'Leipzig, Deutschland',
     },
     'path': {
         'draft': 'drafts',
@@ -102,6 +102,8 @@ configs = Option({
     'theme': 'default',
     'theme_path': '',
     'pagination': 10,
+    'timezone':'Europe/Berlin',
+    'locale': "de_DE"
 })
 
 

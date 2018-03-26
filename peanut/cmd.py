@@ -23,8 +23,18 @@ from docopt import docopt
 import peanut
 from peanut import site
 from peanut.logger import init_logger
+import locale
+import options
+import sys
+
 
 def main():
+    defaultencoding = 'utf-8'
+    if sys.getdefaultencoding() != defaultencoding:
+        reload(sys)
+        sys.setdefaultencoding(defaultencoding)
+
+
     """Read command line arguments and generate site
     """
     args = docopt(__doc__, version='Peanut '+peanut.version)
@@ -52,6 +62,9 @@ def main():
     logging.info('Loading configurations...')
     try:
         blog.load_config(config_path)
+
+        locale.setlocale(locale.LC_ALL, options.configs.locale);
+
     except Exception as e:
         logging.critical(e.args[0])
         exit(-1)

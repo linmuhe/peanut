@@ -1,0 +1,15 @@
+<header class="main-header post-head {% if image %}" style="background-image: url({{ image }}){% else %}no-cover{% endif %}">
+    <nav class="main-nav {% if image %}overlay{% endif %} clearfix">
+        {% if site.logo %}
+        <a class="blog-logo" href="{{ site.url }}">
+            <img src="{{ site.logo }}" alt="{{ site.title }}" />
+        </a>
+        {% endif %}
+        {% if site.navigation %}
+            <a class="menu-button" href="#">
+                <i class="fa fa-bars"></i>
+                <span class="word">Contact</span>
+            </a>
+        {% endif %}
+    </nav>
+</header>

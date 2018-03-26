@@ -1,0 +1,58 @@
+{# Previous/next page links - only displayed on page 2+ #}
+<div class="extra-pagination inner">
+    {% if prev_page or next_page %}
+    <nav class="pagination" role="navigation">
+        <span class="page-number">Page {{page.page}} of {{page.total}}</span>
+            {% if prev_page %}
+            <a class="newer-posts" href="{{prev_page.url}}">← Newer Posts</a>
+            {% endif %}
+            {% if next_page %}
+            <a class="older-posts" href="{{next_page.url}}">Older Posts →</a>
+            {% endif %}
+        </span>
+    </nav>
+    {% endif %}
+</div>
+
+{% for post in posts %}
+<article class="post {{ post_class }}">
+    <header class="post-header">
+        <h2 class="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+    </header>
+    <section class="post-excerpt">
+        {% if post.excerpt %}
+        <p>{{ post.excerpt }}
+            <a class="read-more" href="{{ post.url }}">&raquo;</a>
+        </p>
+        {% endif %}
+    </section>
+    <footer class="post-meta">
+        {% if author.avator %}
+        <img class="author-thumb" src="{{ author.avator }}" alt="{{ author.name }}" nopin="nopin" />
+        {% endif %}
+        <a href="{{ author.url }}">{{ author.name }}</a>
+        {% if post.tags %}
+            {{ " on " }}
+            {% for tag in post.tags %}
+            <a href="{{ tag.url }}"> {{ tag.title }} </a>
+            {% endfor %}
+        {% endif %}
+        <time class="post-date" datetime="{{ post.date|strftime('%Y-%m-%d') }}">
+            {{ post.date|strftime('%d %b %Y') }}</time>
+    </footer>
+</article>
+{% endfor %}
+{% if prev_page or next_page %}
+<nav class="pagination" role="navigation">
+    <span class="page-number">Page {{page.page}} of {{page.total}}</span>
+        {% if prev_page %}
+        <a class="newer-posts" href="{{prev_page.url}}">← Newer Posts</a>
+        {% endif %}
+        {% if next_page %}
+        <a class="older-posts" href="{{next_page.url}}">Older Posts →</a>
+        {% endif %}
+    </span>
+</nav>
+{% endif %}

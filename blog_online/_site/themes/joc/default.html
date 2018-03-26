@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--by joc-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ 'favicon.ico'|asset }}">
+    <link rel="stylesheet" type="text/css" href="{{ 'css/screen.css'|asset }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    {% block header %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %} nav-closed">
+    {#
+    <div class="nav">
+        <h3 class="nav-title">Contact</h3>
+        <a href="#" class="nav-close">
+            <span class="hidden">Close</span>
+        </a>
+        <ul>
+            {% for social in author.socials %}
+            <li class="nav-item" role="presentation">
+                <a href={{social.url}}>{{social.name}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a class="subscribe-button" href="{{site.url}}/rss.xml"><i class="fa fa-rss"></i>Subscribe</a>
+    </div> #}
+    <span class="nav-cover"></span>
+
+    <div class="site-wrapper">
+        {% block body %}{% endblock %}
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="{{ site.url }}">{{ site.title }}</a> &copy; 2015</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+    </div>
+    {% block footer %}{% endblock %}
+    <script type="text/javascript" src="{{ 'js/jquery-1.11.3.min.js'|asset }}"></script>
+    <script type="text/javascript" src="{{ 'js/jquery.fitvids.js'|asset }}"></script>
+    <script type="text/javascript" src="{{ 'js/index.js'|asset }}"></script>
+    {% if site.get('google_analytics') %}
+        {% include 'google_analytics.html' %}
+    {% endif %}
+</body>
+</html>

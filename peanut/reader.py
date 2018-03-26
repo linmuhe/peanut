@@ -12,9 +12,10 @@ import re
 import markdown
 import datetime
 import logging
-
+import pytz
 from six import with_metaclass
 from peanut.meta_yaml import MetaYamlExtension
+import options
 
 
 def parser_list(value):
@@ -39,19 +40,26 @@ def parser_bool(value):
         return False
 
 def parser_date(value):
+    #设置时区和 语言
+
     if isinstance(value, datetime.datetime):
         return value
     if isinstance(value, datetime.date):
         return datetime.datetime(value.year, value.month, value.day)
 
+    #os.environ['TZ'] = options.configs.timezone  #"Europe/Berlin"
     date_string = parser_single(value)
+    tz= pytz.timezone(options.configs.timezone);
+
     date = datetime.datetime.now()
+
     for date_format in ['%Y-%m-%d', '%Y%m%d', '%Y-%m-%d %H:%M', '%Y%m%d %H:%M']:
         try:
             date = datetime.datetime.strptime(date_string, date_format)
         except:
             pass
-    return date
+
+    return tz.localize(date)  #return date
 
 
 class Singleton(type):

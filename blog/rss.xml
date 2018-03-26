@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+    <title>Peanut</title>
+    <link>http://peanut.zorro.im</link>
+	<description>Another peanut blog</description>
+    <language>zh-cn</language>
+    <generator>Peanut</generator>
+    <item>
+		<title>xxx</title>
+		<link>http://peanut.zorro.im/posts/hallo.html</link>
+		<description>&lt;h3 id=&#34;sdafhahaa&#34;&gt;sdafhahaa&lt;/h3&gt;</description>
+		<author>Your Name</author>
+		<copyright></copyright>
+		<pubDate>Thu, 22 Mar 2018 00:00:00 +0800</pubDate>
+    </item>
+</channel>
+</rss>

@@ -23,16 +23,16 @@ author:
     name: Your Name
 
     # Author avatar url
-    # avatar: /path/to/your/avatar
+    avatar: /path/to/your/avatar
 
     # Author url
-    # url: /posts/about.html
+    url: /about.html
 
     # Author bio
     # bio: your bio
 
     # Author location
-    # location: Beijing, China
+    location: Leipzig, Deutschland
 
 
 # Path configurations
@@ -65,7 +65,9 @@ author:
 # rss: True
 
 # Theme name or path
-# theme: default
+#theme: default
 
 # How many posts each page.
-# pagination: 10
+#pagination: 10
+timezone: Europe/Berlin
+locale: de_DE
