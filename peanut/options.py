@@ -89,7 +89,7 @@ configs = Option({
     },
     'path': {
         'draft': 'drafts',
-        'post': 'posts/{slug}.html',
+        'post': 'posts/{cate}/{slug}.html',
         'tag': 'tags/{title}/',
         'pagination': 'page/{num}/',
         'index': 'index.html',

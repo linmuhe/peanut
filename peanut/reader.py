@@ -95,6 +95,7 @@ class MarkdownReader(with_metaclass(Singleton, Reader)):
         'publish': parser_bool,
         'top': parser_bool,
         'image': parser_single,
+        'cate':parser_single
     }
 
     def __init__(self):
@@ -138,8 +139,10 @@ class MarkdownReader(with_metaclass(Singleton, Reader)):
             return None
 
         file_name = os.path.basename(path).split('.')[0]
-        res = {'slug': file_name}
+        dir_categ = os.path.dirname(path).replace('./'+options.configs.path.draft,'').lstrip('/').strip('');
 
+        res = {'slug': file_name}
+        res['cate']= dir_categ
         with open(path, 'r') as f:
             draft = f.read()
             if six.PY2:
@@ -149,6 +152,7 @@ class MarkdownReader(with_metaclass(Singleton, Reader)):
         res.update({'content': content, 'draft': draft})
         if self.md_parser.Meta:
             new_meta = self.parse_meta(self.md_parser.Meta)
+            new_meta['cate']=res['cate']
             res['title'] = new_meta.pop('title')
             res['meta'] = new_meta
 

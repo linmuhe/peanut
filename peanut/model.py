@@ -23,7 +23,9 @@ class BaseModel(object):
     @property
     def file_path(self):
         template = configs.path.get(self.__class__.layout, '').lstrip('/')
-        return url_safe(template.format(**self.__dict__))
+        print(template);
+        print(self.__dict__);
+        return url_safe(template.format(**self.__dict__).replace("//",'/'))
 
     @property
     def url(self):
@@ -67,7 +69,7 @@ class Post(BaseModel):
         self.layout = meta.pop('layout', Post.layout)
         self.top = meta.pop('top', False)
         self.tag_titles = meta.pop('tags', [])
-
+        self.cate = meta.pop("cate",'')
         self.meta = meta
 
     @property

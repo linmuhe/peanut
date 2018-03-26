@@ -113,9 +113,15 @@ class Site(object):
         """Load all drafts
         """
         draft_dir = os.path.join(configs.pwd, configs.path.draft)
+        self.parse_dir(draft_dir)
+
+    def parse_dir(self,draft_dir):
         for f in list_dir(draft_dir):
             logging.visiable('Reading {}'.format(f))
-            self.parse_draft(f)
+            if(os.path.isdir(f)):
+                self.parse_dir(f)
+            else:
+                self.parse_draft(f)
 
     def parse_draft(self, draft_file):
         """Parse draft file

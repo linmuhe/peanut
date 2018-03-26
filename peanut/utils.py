@@ -96,9 +96,10 @@ def list_dir(path):
     for filename in os.listdir(path):
         if filename.startswith('.'):
             continue
-        if os.path.isdir(filename):
-            continue
-        yield to_u(os.path.join(path, filename))
+        elif os.path.isdir(filename):
+             yield to_u(os.path.join(path, filename))
+        else:
+            yield to_u(os.path.join(path, filename))
 
 def get_resource(relative_path):
     package_path = os.path.abspath(os.path.split(__file__)[0])
