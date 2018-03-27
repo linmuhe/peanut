@@ -1,50 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <!--by joc-->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f5f5">
+
+
     <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="{{ 'favicon.ico'|asset }}">
-    <link rel="stylesheet" type="text/css" href="{{ 'css/screen.css'|asset }}" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ 'css/main.css' |asset }}">
+
+    <link rel="canonical" href="{{ site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ author.name }}" href="{{ site.url }}/feed.xml">
+
+    <!-- Icons -->
+    <!-- 16x16 -->
+    <link rel="shortcut icon" href="{{site.url}}/favicon.ico">
+    <!-- 32x32 -->
+<!--
+    <link rel="shortcut icon" href="{{site.url}}/favicon.png">
+-->
     {% block header %}{% endblock %}
 </head>
-<body class="{% block body_class %}{% endblock %} nav-closed">
-    {#
-    <div class="nav">
-        <h3 class="nav-title">Contact</h3>
-        <a href="#" class="nav-close">
-            <span class="hidden">Close</span>
-        </a>
-        <ul>
-            {% for social in author.socials %}
-            <li class="nav-item" role="presentation">
-                <a href={{social.url}}>{{social.name}}</a>
-            </li>
-            {% endfor %}
-        </ul>
-        <a class="subscribe-button" href="{{site.url}}/rss.xml"><i class="fa fa-rss"></i>Subscribe</a>
-    </div> #}
-    <span class="nav-cover"></span>
 
-    <div class="site-wrapper">
-        {% block body %}{% endblock %}
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="{{ site.url }}">{{ site.title }}</a> &copy; 2015</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-        </footer>
+
+<body>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="table cover">
+
+
+            <div class="cover-card table-cell table-middle">
+                <div style="float: right;padding-top: 10px;">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="{{site.url}}">home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{author.url}}">Mich</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{site.url}}/tags/">Tags</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="http://linmuhe.lofter.com">Vorzeit</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div style="float: right;margin-right: 30px;">
+                    <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1373411777,3992091759&fm=27&gp=0.jpg" alt="" class="avatar">
+
+                    <span class="author_job"></span>
+                    <span class="author_bio mbm">
+    <p>
+    一个木匠<br/>
+      一个木匠<br/>
+      一个木匠<br/>
+   一个木匠<br/>
+   一个木匠<br/>
+    </p>
+  </span>
+                    <script type="text/javascript">
+                        // based on http://stackoverflow.com/a/10300743/280842
+                        function gen_mail_to_link(hs, subject) {
+                            var lhs, rhs;
+                            var p = hs.split('@');
+                            lhs = p[0];
+                            rhs = p[1];
+                            document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+                            document.write(":" + lhs + "@");
+                            document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+                        }
+                    </script>
+                    <div class="social-links">
+                        <ul>
+
+                            <li>
+                                <script>gen_mail_to_link('vr.joc@yahoo.com', 'Hallo Joc');</script>
+                            </li>
+
+                            <li><a href="http://twitter.com/jowt2" class="social-link-item" target="_blank"><i
+                                    class="fa fa-fw fa-twitter"></i></a></li>
+
+                            <li><a href="http://github.com/linmuhe" class="social-link-item" target="_blank"><i
+                                    class="fa fa-fw fa-github"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
-    {% block footer %}{% endblock %}
-    <script type="text/javascript" src="{{ 'js/jquery-1.11.3.min.js'|asset }}"></script>
-    <script type="text/javascript" src="{{ 'js/jquery.fitvids.js'|asset }}"></script>
-    <script type="text/javascript" src="{{ 'js/index.js'|asset }}"></script>
-    {% if site.get('google_analytics') %}
-        {% include 'google_analytics.html' %}
-    {% endif %}
+
+    <div class="col s12 m9">
+        <div class="post-listing">
+            <div id="page">
+                {% block body %}{% endblock %}
+            </div>
+            <footer>
+                © 2018 {{ author.name }}. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a
+                    href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i
+                    class="fa fa-heart heart-icon"></i>
+            </footer>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="{{'js/jquery-3.2.1.min.js'|asset}}"></script>
+<script type="text/javascript" src="{{'js/main.js'|asset}}"></script>
+
 </body>
 </html>

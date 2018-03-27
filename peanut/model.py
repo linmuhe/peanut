@@ -23,8 +23,8 @@ class BaseModel(object):
     @property
     def file_path(self):
         template = configs.path.get(self.__class__.layout, '').lstrip('/')
-        print(template);
-        print(self.__dict__);
+       # print(template);
+       # print(self.__dict__);
         return url_safe(template.format(**self.__dict__).replace("//",'/'))
 
     @property
@@ -84,6 +84,10 @@ class Post(BaseModel):
         return self.meta.get(key)
 
     def __lt__(self, other):
+        if(self.top):
+            return False
+        if(other.top):
+            return True
         return self.date < other.date
 
 

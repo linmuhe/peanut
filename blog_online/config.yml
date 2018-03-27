@@ -11,7 +11,7 @@ site:
     # cover: /path/to/your/site/cover
 
     # Base url
-    url: http://peanut.zorro.im
+    url: http://127.0.0.1:4000
 
     # Description
     description: Wer ist mich ?
@@ -41,7 +41,7 @@ path:
     draft: drafts
 
     # Post url template
-    # post: posts/{slug}.html
+    post: posts/{cate}/{slug}.html
 
     # Tag url template
     # tag: tags/{title}/
@@ -68,6 +68,7 @@ path:
 theme: themes/joc
 
 # How many posts each page.
-pagination: 1
+#pagination: 1
 timezone: Europe/Berlin
 locale: de_DE
+port: 80

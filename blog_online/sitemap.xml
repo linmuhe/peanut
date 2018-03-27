@@ -1,12 +1,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://peanut.zorro.im/posts/Mein_Haus.html</loc>
+		<loc>http://127.0.0.1:4000/posts/A/BBaaa.html</loc>
 		<lastmod>2018-03-26</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
 	<url>
-		<loc>http://peanut.zorro.im/posts/B.html</loc>
-		<lastmod>2018-03-26</lastmod>
+		<loc>http://127.0.0.1:4000/posts/A/qqq.html</loc>
+		<lastmod>2018-03-24</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://127.0.0.1:4000/posts/B/CC.html</loc>
+		<lastmod>2017-08-21</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://127.0.0.1:4000/posts/A/Mein_Haus.html</loc>
+		<lastmod>2018-03-29</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://127.0.0.1:4000/posts/Mein_Haus.html</loc>
+		<lastmod>2018-03-28</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://127.0.0.1:4000/posts/A/BB.html</loc>
+		<lastmod>2018-03-24</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://127.0.0.1:4000/posts/B/BB.html</loc>
+		<lastmod>2017-11-24</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+	<url>
+		<loc>http://127.0.0.1:4000/posts/about.html</loc>
+		<lastmod>2017-03-28</lastmod>
 		<changefreq>monthly</changefreq>
 	</url>
 </urlset>

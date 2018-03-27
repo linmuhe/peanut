@@ -25,7 +25,7 @@ def abs_url(config, value):
     return urljoin(config.site['url'], value)
 
 def get_filters(config):
-    """Get all filters
+    """Get all filters 在模版里使用  'css/main.css'|asset
     """
     return {
         'asset': partial(asset, config),

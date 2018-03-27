@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="zqqf16 的个人博客">
+    <meta name="keywords" content="Programming, iOS, and Python">
+    <meta name="author" content="Archive | 穷折腾">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f5f5">
+
+
+    <title>Archive | 穷折腾</title>
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <link rel="canonical" href="http://blog.zorro.im/">
+    <link rel="alternate" type="application/rss+xml" title="穷折腾" href="http://blog.zorro.im%20/feed.xml">
+
+    <!-- Icons -->
+    <!-- 16x16 -->
+    <link rel="shortcut icon" href="http://blog.zorro.im/favicon.ico">
+    <!-- 32x32 -->
+    <link rel="shortcut icon" href="http://blog.zorro.im/favicon.png">
+</head>
+
+
+<body>
+<div class="row">
+    <div class="col s12 m3">
+        <div class="table cover">
+
+
+            <div class="cover-card table-cell table-middle">
+                <div style="float: right;padding-top: 10px;">
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="http://blog.zorro.im/">home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="http://blog.zorro.im/about">Mich</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="http://blog.zorro.im/">Tags</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="http://blog.zorro.im/tags/">Vorzeit</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div style="float: right;margin-right: 30px;">
+                    <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1373411777,3992091759&fm=27&gp=0.jpg" alt="" class="avatar">
+
+
+                    <span class="author_job"></span>
+                    <span class="author_bio mbm">
+    <p>
+    一个木匠<br/>
+      一个木匠<br/>
+      一个木匠<br/>
+   一个木匠<br/>
+   一个木匠<br/>
+    </p>
+  </span>
+                    <script type="text/javascript">
+                        // based on http://stackoverflow.com/a/10300743/280842
+                        function gen_mail_to_link(hs, subject) {
+                            var lhs, rhs;
+                            var p = hs.split('@');
+                            lhs = p[0];
+                            rhs = p[1];
+                            document.write("<a class=\"social-link-item\" target=\"_blank\" href=\"mailto");
+                            document.write(":" + lhs + "@");
+                            document.write(rhs + "?subject=" + subject + "\"><i class=\"fa fa-fw fa-envelope\"></i><\/a>");
+                        }
+                    </script>
+                    <div class="social-links">
+                        <ul>
+
+                            <li>
+                                <script>gen_mail_to_link('zqqf16@gmail.com', 'Hello from website');</script>
+                            </li>
+
+                            <li><a href="http://twitter.com/zqqf16" class="social-link-item" target="_blank"><i
+                                    class="fa fa-fw fa-twitter"></i></a></li>
+
+                            <li><a href="http://github.com/zqqf16" class="social-link-item" target="_blank"><i
+                                    class="fa fa-fw fa-github"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="col s12 m9">
+        <div class="post-listing">
+            <div id="page">
+                <header class="page-header">
+                    <a href="http://blog.zorro.im/" class="author_name">Jochine</a>
+                </header>
+
+                <article class="page-content">
+                    <div class="archive">
+                        <div class="timeline" id="timeline">
+
+
+                            <div class="archive-title">
+                                <h4 class="archive-year">2017</h4>
+                            </div>
+
+                            <ul>
+
+                                <li>
+                                    <div class="archive-title-zeit">Di. Oct 12 </div>
+                                    <a href="http://blog.zorro.im/posts/how-to-clear-safari-hsts.html">清理 Safari HSTS
+                                        记录</a></li>
+
+
+                                <li>
+                                    <div class="archive-title-zeit">Mo. Jun 26</div>
+                                    <a href="http://blog.zorro.im/posts/two-xcode-build-scripts.html">两个 Xcode Build
+                                        Script</a></li>
+
+
+                                <li>
+                                    <div class="archive-title-zeit">Mi. Apr 11</div>
+                                    <a href="http://blog.zorro.im/posts/cong-jing-tai-ku-zhong-shan-chu-yi-ge-o-wen-jian.html">从静态库中删除一个
+                                        .o 文件</a></li>
+
+
+                                <li>
+                                    <div class="archive-title-zeit">Do. Mar 28</div>
+                                    <a href="http://blog.zorro.im/posts/debug-yu-release-fen-bie-yin-ru-bu-tong-de-pod.html">Debug
+                                        与 Release 分别引入不同的 Pod</a></li>
+
+
+                                <li>
+                                    <div class="archive-title-zeit"">Fr. Feb 27</div>
+                                    <a href="http://blog.zorro.im/posts/fuck-xcode.html">修复 Xcode 调试时卡死的脚本</a></li>
+
+
+                            </ul>
+                            <div class="archive-title">
+                                <h4 class="archive-year">2016</h4>
+                            </div>
+
+                            <ul>
+
+
+                                <li>
+                                    <div class="archive-title-zeit">Sa. Dec 3</div>
+                                    <a href="http://blog.zorro.im/posts/hi-ghost.html">Hi Ghost</a></li>
+
+
+                                <li>
+                                    <div class="archive-title-zeit">So. Aug 27</div>
+                                    <a href="http://blog.zorro.im/posts/how_to_create_a_static_library.html">开发一个合格的 iOS
+                                        SDK</a></li>
+
+
+                                <li>
+                                    <div class="archive-title-zeit">Aug 11</div>
+                                    <a href="http://blog.zorro.im/posts/sym.html">写了一个符号化 iOS Crash 的 Mac App － SYM</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Mar 24</div>
+                                    <a href="http://blog.zorro.im/posts/ios-crash-report.html">iOS Crash Report
+                                        的加载地址、dSYM 与 UUID</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Feb 17</div>
+                                    <a href="http://blog.zorro.im/posts/strongswan-ikev2-for-ios-with-letsencrypt.html">用
+                                        Let‘s Encrypt 证书搭建 IKEv2 VPN</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jan 18</div>
+                                    <a href="http://blog.zorro.im/posts/beijing_gongzuo_juzhuzheng.html">北京工作居住证办理攻略</a>
+                                </li>
+
+
+                            </ul>
+                            <div class="archive-title">
+                                <h4 class="archive-year">2015</h4>
+                            </div>
+
+                            <ul>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Dec 31</div>
+                                    <a href="http://blog.zorro.im/posts/my-2015.html">我的 2015</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Dec 7</div>
+                                    <a href="http://blog.zorro.im/posts/gcd-dispatch-queue-and-thread.html">Dispatch
+                                        Queue 与线程</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Nov 11</div>
+                                    <a href="http://blog.zorro.im/posts/proxychains_not_work.html">OS X 上 ProxyChains
+                                        失效的原因</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Oct 14</div>
+                                    <a href="http://blog.zorro.im/posts/strongswan-ikev2-for-ios-without-certificate.html">用
+                                        strongSwan 搭建免证书的 IKEv2 VPN</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Sep 11</div>
+                                    <a href="http://blog.zorro.im/posts/object_setivar_under_arc.html">在 ARC 下使用
+                                        object_setIvar 的问题</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Aug 4</div>
+                                    <a href="http://blog.zorro.im/posts/ios-muti-threading-synchronization.html">iOS
+                                        的多线程同步</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 20</div>
+                                    <a href="http://blog.zorro.im/posts/prototype_before_polishing.html">雕琢前先得有原型，跑之前先学会走</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jun 25</div>
+                                    <a href="http://blog.zorro.im/posts/proxychains.html">ProxyChains 及其原理</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jun 1</div>
+                                    <a href="http://blog.zorro.im/posts/taian_jinan.html">泰安济南两日游</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 10</div>
+                                    <a href="http://blog.zorro.im/posts/concert.html">一场演唱会</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Apr 13</div>
+                                    <a href="http://blog.zorro.im/posts/interesting-react-native.html">React Native
+                                        中那些有意思的地方（一）</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Feb 11</div>
+                                    <a href="http://blog.zorro.im/posts/objective-c-runtime-3.html">Objective-C
+                                        Runtime（三）</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jan 6</div>
+                                    <a href="http://blog.zorro.im/posts/my-2014.html">我的2014</a></li>
+
+
+                            </ul>
+                            <div class="archive-title">
+                                <h4 class="archive-year">2014</h4>
+                            </div>
+
+                            <ul>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Nov 1</div>
+                                    <a href="http://blog.zorro.im/posts/nsurlprotocol-development.html">NSURLProtocol
+                                        开发笔记</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Oct 14</div>
+                                    <a href="http://blog.zorro.im/posts/ios8-network-extension.html">谈谈 iOS8 中的 Network
+                                        Extension</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Sep 1</div>
+                                    <a href="http://blog.zorro.im/posts/ibeacon.html">初识 iBeacon</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 28</div>
+                                    <a href="http://blog.zorro.im/posts/raspberry_model_b_plus.html">树莓派 Model B+
+                                        入手小记</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 7</div>
+                                    <a href="http://blog.zorro.im/posts/mvvm.html">谈谈 iOS 中的 MVVM</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Apr 9</div>
+                                    <a href="http://blog.zorro.im/posts/wad.html">一个方便无线发布iOS应用的工具——WAD</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Mar 20</div>
+                                    <a href="http://blog.zorro.im/posts/smart-device.html">你真的需要一台这样的“智能”设备？</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Mar 17</div>
+                                    <a href="http://blog.zorro.im/posts/objective-c-ojbect-2.html">从源码看Objective-C的对象模型（二）</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Mar 5</div>
+                                    <a href="http://blog.zorro.im/posts/objective-c-ojbect-1.html">从源码看Objective-C的对象模型（一）</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Feb 17</div>
+                                    <a href="http://blog.zorro.im/posts/qiniu.html">尝试一下七牛云存储</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Feb 16</div>
+                                    <a href="http://blog.zorro.im/posts/laptop-screen-diy.html">笔记本屏幕改造</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jan 12</div>
+                                    <a href="http://blog.zorro.im/posts/my-2013.html">我的2013</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jan 6</div>
+                                    <a href="http://blog.zorro.im/posts/python-new-init.html">Python中关于__new__和__init__的坑</a>
+                                </li>
+
+
+                            </ul>
+                            <div class="archive-title">
+                                <h4 class="archive-year">2013</h4>
+                            </div>
+
+                            <ul>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Dec 27</div>
+                                    <a href="http://blog.zorro.im/posts/change-domain.html">换域名了</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Dec 23</div>
+                                    <a href="http://blog.zorro.im/posts/tucao-jailbreak.html">关于iOS越狱</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Dec 19</div>
+                                    <a href="http://blog.zorro.im/posts/web-clipboard.html">写了一个简单的Web剪切板-Clipboard</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Nov 21</div>
+                                    <a href="http://blog.zorro.im/posts/tornado-template.html">Tornado源码之Template</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Nov 12</div>
+                                    <a href="http://blog.zorro.im/posts/colorit.html">Colorit——一个给终端输出上色的工具</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Nov 1</div>
+                                    <a href="http://blog.zorro.im/posts/ssl-csr.html">SSL证书研究之CSR</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Oct 24</div>
+                                    <a href="http://blog.zorro.im/posts/just-photo.html">照片两张</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Oct 22</div>
+                                    <a href="http://blog.zorro.im/posts/argparse.html">Python命令行参数解析工具——argparse</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Aug 20</div>
+                                    <a href="http://blog.zorro.im/posts/how-to-highlight-code-in-markdown-continue.html">高亮Markdown中的代码（续）</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Aug 19</div>
+                                    <a href="http://blog.zorro.im/posts/openldap-add-schema.html">OpenLDAP添加Schema（Ubuntu）</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Aug 2</div>
+                                    <a href="http://blog.zorro.im/posts/levenshtein-distance.html">Levenshtein
+                                        distance（编辑距离）算法</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 24</div>
+                                    <a href="http://blog.zorro.im/posts/python-http-uploading-server.html">支持上传的SimpleHTTPServer</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 18</div>
+                                    <a href="http://blog.zorro.im/posts/python-requests-encoding-problems.html">Requests抓取网页的编码问题</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 16</div>
+                                    <a href="http://blog.zorro.im/posts/tornado-configurable.html">tornado源码之Configurable类</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 11</div>
+                                    <a href="http://blog.zorro.im/posts/ios7.html">iOS7 Beta 3体验</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 11</div>
+                                    <a href="http://blog.zorro.im/posts/helicobacter-pylori.html">幽门螺旋杆菌</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jul 4</div>
+                                    <a href="http://blog.zorro.im/posts/recent-status.html">近期状态</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jun 5</div>
+                                    <a href="http://blog.zorro.im/posts/understand-git-stage.html">理解 Git 的暂存区</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Jun 4</div>
+                                    <a href="http://blog.zorro.im/posts/markdown-editor-under-ubuntu.html">Ubuntu下好用的Markdown编辑器</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 28</div>
+                                    <a href="http://blog.zorro.im/posts/c-priority.html">重拾C语言之运算符优先级</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 26</div>
+                                    <a href="http://blog.zorro.im/posts/c-array-initialization.html">重拾C语言之数组初始化</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 24</div>
+                                    <a href="http://blog.zorro.im/posts/c-strncpy.html">重拾C语言之strncpy</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 23</div>
+                                    <a href="http://blog.zorro.im/posts/sphinx.html">Sphinx入门</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 22</div>
+                                    <a href="http://blog.zorro.im/posts/my-vim-configuration.html">我的Vim配置</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 21</div>
+                                    <a href="http://blog.zorro.im/posts/tucao-freedom.html">论自由</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 20</div>
+                                    <a href="http://blog.zorro.im/posts/youdao-translation.html">命令行下的有道翻译</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 16</div>
+                                    <a href="http://blog.zorro.im/posts/use-graphviz-to-draw-struct-graph.html">用Graphviz画数据结构图</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 14</div>
+                                    <a href="http://blog.zorro.im/posts/tucao-cloud.html">小饭馆与云计算</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">May 13</div>
+                                    <a href="http://blog.zorro.im/posts/tucao-major.html">吐槽一下专业</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Apr 26</div>
+                                    <a href="http://blog.zorro.im/posts/how-to-highlight-code-in-markdown.html">高亮Markdown中的代码</a>
+                                </li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Apr 25</div>
+                                    <a href="http://blog.zorro.im/posts/about.html">关于</a></li>
+
+
+                                <li>
+                                    <div style="width:60px;float:left;">Apr 24</div>
+                                    <a href="http://blog.zorro.im/posts/hello-world.html">Hello World</a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </article>
+
+
+            </div><!-- end page content -->
+
+
+            <footer>
+                © 2017 zqqf16. Powered by <a href="http://jekyllrb.com/">Jekyll</a>, <a
+                    href="http://github.com/renyuanz/leonids/">leonids theme</a> made with <i
+                    class="fa fa-heart heart-icon"></i>
+            </footer>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./assets/js/main.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-41282906-2', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

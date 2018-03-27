@@ -24,6 +24,7 @@ class Writer(object):
         self.posts = posts
         self.template = template
 
+
     def write_to_file(self, file_path, content):
         """Write content to file
         """
@@ -88,19 +89,30 @@ class ArchiveWriter(Writer):
         self.num_per_page = configs.pagination
         self.context = {}
 
+        self.context['ye'] = {}
+        for p in posts:
+            year = p.date.strftime("%Y")
+            if year not in self.context['ye']:
+                self.context['ye'][year] = [p]
+            else:
+                self.context['ye'][year].append(p)
+
+
     def run(self, posts=None):
+        # not pagination
         posts = posts or self.posts
-        page = Pagination(posts, base_url=self.base_url,
+        '''page = Pagination(posts, base_url=self.base_url,
                 posts_per_page=self.num_per_page)
 
         for n, p in enumerate(page.iterate()):
             content = self.render(p)
-            logging.debug('Write file %s', p.file_path, prefix='   ↳  ')
-            self.write_to_file(p.file_path, content)
+            logging.debug('Write file %s', p.file_path, prefix='   ↳  ')'''
 
-    def render(self, page):
-        return self.template.render(self.layout, posts=page.posts, page=page,
-                prev_page=page.prev, next_page=page.next, **self.context)
+
+        self.write_to_file(self.base_url, self.render(posts))
+
+    def render(self,posts):
+        return self.template.render(self.layout, posts=posts, **self.context)
 
 
 class TagWriter(ArchiveWriter):
@@ -115,19 +127,26 @@ class TagWriter(ArchiveWriter):
         for p in posts:
             for tag in p.tags:
                 if tag not in self.tags:
+
                     self.tags[tag] = [p]
                 else:
                     self.tags[tag].append(p)
 
-    def run(self):
-        for tag in self.tags:
-            logging.debug('Render tag %s', tag.title)
-            posts = self.tags.get(tag)
-            if not posts:
-                continue
-            self.context['tag'] = tag
-            self.base_url = tag.file_path
-            super(TagWriter, self).run(posts=posts)
+
+    def run(self,posts=None):
+       self.context['tags']=self.tags
+       super(TagWriter,self).run(posts)
+       ''' 
+                      #super(TagWriter,self).write_to_file(self.base_url,tagContent)
+
+               for tag in self.tags:
+                   logging.debug('Render tag %s', tag.title)
+                   posts = self.tags.get(tag)
+                   if not posts:
+                       continue
+                   self.context['tag'] = tag
+                   self.base_url = tag.file_path
+                   super(TagWriter, self).run(posts=posts)'''
 
 
 class RssWriter(Writer):
